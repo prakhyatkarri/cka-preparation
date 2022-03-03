@@ -9,11 +9,12 @@ kubectl create cm <configmap_name> --from-literal=key=value
 kubectl create cm <configmap_name> --from-file=<file_path>
 
 # Set env in pod from ConfigMap key
+```
 env:
 - name: my_environment_variable
   valueFrom:
    configMapKeyRef:
     name: config_map_name
     key: key_name
-
+```
 
