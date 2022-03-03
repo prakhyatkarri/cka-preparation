@@ -25,6 +25,6 @@ kubectl delete po nginx --force
 
 
 #### Add commands in pod
-command: ["sleep", "4800"]
+command: ["sleep", "4800"] \
 args: ["--type","code"]
 
